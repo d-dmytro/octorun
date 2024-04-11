@@ -1,0 +1,11 @@
+commands:
+  - name: first command
+    command: node index.js
+    dir: test-apps/node-app
+  - name: second command
+    command: node index.js crash
+    dir: test-apps/node-app
+  - name: third command
+    command: docker compose up -d
+    cleanupCommand: docker compose stop
+    dir: test-apps/node-app
