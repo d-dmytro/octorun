@@ -12,7 +12,7 @@ const ColonRune = rune(58)
 type Command struct {
 	Name           string
 	Command        string
-	CleanupCommand string
+	CleanupCommand string `yaml:"cleanupCommand"`
 	Dir            string
 }
 

@@ -6,6 +6,6 @@ commands:
     command: node index.js crash
     dir: test-apps/node-app
   - name: third command
-    command: docker compose up -d
-    cleanupCommand: docker compose stop
+    command: node index.js waitandexit
+    cleanupCommand: node index.js waitandexit
     dir: test-apps/node-app
